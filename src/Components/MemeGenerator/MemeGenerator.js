@@ -9,7 +9,8 @@ class MemeGenerator extends React.Component {
             topText: "",
             bottomText: "",
             randomImage: "http://i.imgflip.com/1bij.jpg",
-            allMemes: []
+            allMemes: [],
+            textSize: 40
         };
     }
 
@@ -42,6 +43,12 @@ class MemeGenerator extends React.Component {
     }
 
     render() {
+        const h2Style = {
+            'fontSize': this.state.textSize + 'px'
+        }
+
+        console.log(h2Style)
+
         return (
             <div className="meme-generator">
                 <form className="meme-form" onSubmit={this.handleSubmit}>
@@ -68,8 +75,8 @@ class MemeGenerator extends React.Component {
 
                 <div className="meme">
                     <img src={this.state.randomImage} alt="" />
-                    <h2 className="top">{this.state.topText}</h2>
-                    <h2 className="bottom">{this.state.bottomText}</h2>
+                    <h2 className="top" style={h2Style}>{this.state.topText}</h2>
+                    <h2 className="bottom" style={h2Style}>{this.state.bottomText}</h2>
                 </div>
             </div>
           );
