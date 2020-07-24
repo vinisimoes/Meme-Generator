@@ -28,7 +28,9 @@ class MemeGenerator extends React.Component {
         event.preventDefault();
         var randomURL = this.state.allMemes[Math.floor(Math.random() * this.state.allMemes.length)].url;
         this.setState({
-            randomImage: randomURL
+            randomImage: randomURL,
+            topText: "",
+            bottomText: ""
         })
     }
 
