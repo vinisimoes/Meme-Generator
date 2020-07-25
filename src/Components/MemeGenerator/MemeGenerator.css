@@ -29,14 +29,6 @@
     text-align: center;
 }
 
-.meme-generator .meme-form button:hover {
-    background-color: #8621da;
-}
-
-.meme-generator .meme-form button:active {
-    background-color: #6d139e;
-}
-
 .meme-generator .meme-form .slider {
     -webkit-appearance: none;
 
@@ -108,12 +100,29 @@
     margin-bottom: 5px;
 }
 
-.meme-generator button {
-    margin-top: 5px;
-    line-height: 2em;
-    font-size: larger;
-    color: whitesmoke;
-    background-color: #6c0abd;
+.meme-generator .button {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
     outline: none;
+    border: none;
+    background-color: #6c0abd;
     width: 200px;
+    line-height: 40px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: whitesmoke;
+    background-size: 100% 100%;
+    box-shadow: 0 0 0 7px var(--light) inset;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.meme-generator .button:hover {
+    background-color: #8621da;
+}
+
+.meme-generator .button:active {
+    background-color: #6d139e;
 }
