@@ -63,19 +63,22 @@
 .meme-generator .meme {
     margin:50px;
     width: 500px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.meme-generator .meme img {
+.meme-generator .meme .img-container {
+    position: relative;
+}
+
+.meme-generator .meme .img-container img {
     height: 300px;
     position: relative;
 }
 
-.meme-generator .meme h2 {
+.meme-generator .meme .img-container h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     font-size: 40px;
@@ -90,17 +93,17 @@
     line-height: 1em;
 }
 
-.meme-generator .meme .top {
+.meme-generator .meme .img-container .top {
     top: 0px;
     margin-top: 5px;
 }
 
-.meme-generator .meme .bottom {
+.meme-generator .meme .img-container .bottom {
     bottom: 0px;
     margin-bottom: 5px;
 }
 
-.meme-generator .button {
+.meme-generator .meme .button {
     display: block;
     margin-top: 10px;
     cursor: pointer;
@@ -119,10 +122,10 @@
     text-align: center;
 }
 
-.meme-generator .button:hover {
+.meme-generator .meme .button:hover {
     background-color: #8621da;
 }
 
-.meme-generator .button:active {
+.meme-generator .meme .button:active {
     background-color: #6d139e;
 }
