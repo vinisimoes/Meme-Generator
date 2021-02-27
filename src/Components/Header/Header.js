@@ -10,7 +10,7 @@ function Header() {
             src={trollface_img}
             alt="Problem???"
         />
-        <p>Meme Generator</p>
+        <p>Meme Generator!</p>
     </header>
   );
 }
